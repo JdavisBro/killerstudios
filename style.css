@@ -1,0 +1,113 @@
+@font-face {
+    font-family: scary;
+    src: url("fonts/scary.ttf");
+}
+
+HTML {
+    margin: 0;
+
+    --main-colour: rgb(208, 208, 208);
+    --logo-colour: rgba(63, 63, 63, 0.8);
+}
+
+BODY {
+    background-color: rgb(75, 75, 75);
+}
+
+.container {
+    position: absolute;
+    width: 800px;
+    left: calc(50% - 400px);
+    height: 100%;
+    background-image: url("images/bg.gif");
+    top: 0;
+}
+
+
+.headerImg {
+    position: absolute;
+    top: 0;left: 2%;
+    padding-right: 10px;
+    background-color: var(--logo-colour);
+    padding: 0 4% 0 3.8%;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.header {
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    width: 50%;
+    padding: 0 20px;
+    clip-path: polygon(7% 0%, 93% 0%, 100% 100%, 0% 100%);
+    height: 30px;
+    background-color: var(--main-colour);
+}
+
+.headerItem {
+    background-color: blue;
+    color: white;
+    float: left;
+    margin-top: 2px;
+    padding: 1px 3px;
+    margin-left: 16px;
+}
+
+.headerItem:hover {
+    background-color: rgb(72, 72, 255);
+}
+
+.content {
+    position: absolute;
+    left: 3%;
+    top: 110px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 94%;
+    height: 84%;
+    clip-path: polygon(6% 0, 98% 0, 100% 2%, 100% 94%, 94% 100%, 2% 100%, 0 98%, 0 6%);
+    background-color: var(--main-colour);
+}
+
+.content h1 {
+    font-size: 1em;
+    text-align: center;
+    font-family: scary;
+    color: darkred;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.imNew {
+    position: absolute;
+}
+
+.imNew::before {
+    background-image: url("images/NEW.jpg");
+    content: " ";
+    width: 200px;
+    height: 200px;
+}
+
+.pagesfirstchild {
+    margin-left: 50px;
+}
+
+.pages a {
+    float: left;
+    text-align: center;
+}
+
+.pages a p {
+    width: 100%;
+    text-align: center;
+}
+
+.subtext {
+    font-size: 0.8em;
+    position: absolute;
+    left: calc(50% - 380px);
+    bottom: -12px;
+}
